@@ -1,0 +1,251 @@
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+  --white: #ffffff;
+  --white300: #f9f9f9;
+  --title: #2b2b2b;
+  --text: #555555;
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../assets/fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(../assets/fonts/Merriweather-Regular.ttf);
+}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+/* Reset end */
+header {
+  background-color: var(--bgSite);
+  height: 560px;
+  width: 100%;
+  padding: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+header .container-header {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container-header .contentText h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-family: "Merriweather-Regular";
+}
+header .container-header .contentText p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  font-family: "Lato-Regular";
+}
+header .container-header .contentText h1,
+header .container-header .contentText p {
+  max-width: 500px;
+}
+header .container-header .contentText .btn {
+  background-color: var(--buttonColor);
+  color: var(--white);
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em 3em;
+  height: 155px;
+  width: 50px;
+  border-radius: 5px;
+  font-family: "Lato-Regular";
+}
+header .container-header .contentImg {
+  background-image: url(../assets/img/image.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 450px;
+}
+.cards {
+  background-color: var(--white300);
+  padding: 2em;
+}
+.cards .container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0 auto;
+}
+.cards .container .card {
+  height: 400px;
+  width: 300px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+.cards .container .card .img {
+  width: 100%;
+  height: 200px;
+}
+.cards .container .card .img-1 {
+  background-color: #FF6363;
+}
+.cards .container .card .img-2 {
+  background-color: #63ECFF;
+}
+.cards .container .card .img-3 {
+  background-color: #F363FF;
+}
+.cards .container .card .img-4 {
+  background-color: #63FF73;
+}
+.cards .container .card .img-5 {
+  background-color: #FFDD63;
+}
+.cards .container .card .img-6 {
+  background-color: #6663FF;
+}
+.cards .container .card .text-group {
+  padding: 1em;
+  text-align: left;
+  height: 200px;
+}
+.cards .container .card .text-group h3 {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  font-family: "Merriweather-Bold";
+}
+.cards .container .card .text-group p {
+  font-size: 1em;
+  line-height: 30px;
+  font-family: "Lato-Regular";
+}
+footer {
+  background-color: var(--bgSite);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2.5em;
+}
+footer h3 {
+  font-size: 2em;
+  padding: 1.5em 0;
+  font-family: "Merriweather-Regular";
+}
+footer form {
+  max-width: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer form .form-group input,
+footer form .form-group textarea {
+  background-color: var(--white);
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1em;
+}
+footer form .form-group textarea {
+  height: auto;
+  border: none;
+}
+footer form .form-group .btn {
+  text-align: center;
+  width: 100%;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  font-size: 1.2em;
+  height: 50px;
+  border-radius: 5px;
+}
+footer form .form-group .btn a {
+  font-family: "Lato-Regular";
+}
+@media (max-width: 1200px) {
+  header {
+    height: auto;
+  }
+  header .container-header {
+    flex-direction: column;
+  }
+  header .container-header .contentText {
+    padding: 1em;
+  }
+  header .container-header .contentText h1 {
+    font-size: 1.5em;
+  }
+  header .container-header .contentText p {
+    font-size: 1em;
+  }
+  header .container-header .contentImg {
+    height: 200px;
+    width: 320px;
+  }
+  .cards .container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  footer h3 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 425px) {
+  footer form {
+    max-width: 70%;
+  }
+  footer form .form-group .btn {
+    font-size: 1em;
+  }
+}
